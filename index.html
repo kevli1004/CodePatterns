@@ -56,37 +56,6 @@
             border-radius: 8px;
             margin: 20px 0;
         }
-        .troubleshooting-step {
-            background-color: #FEF3C7;
-            border-left: 4px solid #F59E0B;
-            padding: 10px 15px;
-            margin: 10px 0;
-            border-radius: 4px;
-        }
-        .requirements-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        .requirements-table th,
-        .requirements-table td {
-            border: 1px solid #D1D5DB;
-            padding: 12px;
-            text-align: left;
-        }
-        .requirements-table th {
-            background-color: #F3F4F6;
-            font-weight: bold;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        .category-section {
-            margin-bottom: 40px;
-        }
         .support-channels {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -103,6 +72,13 @@
             margin-top: 0;
             color: #6B46C1;
         }
+        .subscription-highlight {
+            background-color: #FEF3C7;
+            padding: 15px;
+            border-left: 4px solid #F59E0B;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -112,223 +88,193 @@
         <p><strong>Need help?</strong> Find answers to common questions below or contact our support team for personalized assistance.</p>
     </div>
 
-    <div class="category-section">
-        <h2>📚 Frequently Asked Questions</h2>
+    <h2>📚 Frequently Asked Questions</h2>
 
-        <h3>Getting Started</h3>
-        
-        <div class="faq-item">
-            <div class="faq-question">Q: How do I start using CodePatterns?</div>
-            <div class="faq-answer">A: Simply download the app from the App Store and open it. No account creation required! Your progress is automatically saved on your device.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: Is CodePatterns free?</div>
-            <div class="faq-answer">A: Yes! CodePatterns is completely free to download and use. All core features including Battle Mode, Practice, Retry system, and Analytics are available at no cost.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: Do I need an internet connection?</div>
-            <div class="faq-answer">A: No! CodePatterns works completely offline. All questions, explanations, and features are available without an internet connection.</div>
-        </div>
-
-        <h3>Using the App</h3>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: What's the difference between Practice and Battle modes?</div>
-            <div class="faq-answer">
-                <strong>Practice Mode:</strong> Learn at your own pace with detailed explanations after each question<br>
-                <strong>Battle Mode:</strong> Real-time 30-second challenges against AI opponents for competitive practice
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: How does the Retry system work?</div>
-            <div class="faq-answer">The Retry system tracks questions you've answered incorrectly. Once you answer a question correctly (even in retry mode), it's marked as "mastered" and won't appear in your retry list again.</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: What algorithm categories are covered?</div>
-            <div class="faq-answer">
-                CodePatterns covers 8+ essential categories:
-                <ul>
-                    <li>Arrays & Hashing</li>
-                    <li>Two Pointers</li>
-                    <li>Sliding Window</li>
-                    <li>Stacks & Queues</li>
-                    <li>Binary Search</li>
-                    <li>Linked Lists</li>
-                    <li>Trees</li>
-                    <li>Dynamic Programming</li>
-                    <li>And more!</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: How are the AI opponents different?</div>
-            <div class="faq-answer">
-                AI opponents have different skill levels:
-                <ul>
-                    <li><strong>Beginner:</strong> 65% accuracy, slower response times</li>
-                    <li><strong>Intermediate:</strong> 75% accuracy, moderate speed</li>
-                    <li><strong>Advanced:</strong> 85% accuracy, faster responses</li>
-                    <li><strong>Expert:</strong> 92% accuracy, very quick responses</li>
-                </ul>
-            </div>
-        </div>
-
-        <h3>Progress and Achievements</h3>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: How is my progress tracked?</div>
-            <div class="faq-answer">
-                Your progress is tracked across multiple dimensions:
-                <ul>
-                    <li>Questions answered correctly/incorrectly per category</li>
-                    <li>Overall accuracy percentage</li>
-                    <li>Time spent learning</li>
-                    <li>Achievement badges earned</li>
-                    <li>Battle wins and losses</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Q: What achievements can I unlock?</div>
-            <div class="faq-answer">
-                There are multiple achievement categories:
-                <ul>
-                    <li><strong>Learning:</strong> "First Steps", "Warming Up", "On Fire"</li>
-                    <li><strong>Mastery:</strong> Category-specific expert badges</li>
-                    <li><strong>Battle:</strong> "First Victory", "Battle Veteran", "War Champion"</li>
-                    <li><strong>Special:</strong> "Perfect Run", "Point Master"</li>
-                </ul>
-            </div>
-        </div>
+    <h3>Getting Started</h3>
+    
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I start using CodePatterns?</div>
+        <div class="faq-answer">A: Simply download the app from the App Store and open it. No account creation required! Your progress is automatically saved on your device.</div>
     </div>
 
-    <div class="category-section">
-        <h2>🔧 Troubleshooting Guide</h2>
-
-        <h3>Common Issues and Solutions</h3>
-
-        <h4>App Won't Launch</h4>
-        <div class="troubleshooting-step">
-            <strong>Symptoms:</strong> App crashes immediately upon opening<br>
-            <strong>Solutions:</strong>
-            <ol>
-                <li>Force-close the app: Double-tap home button (or swipe up), swipe up on CodePatterns</li>
-                <li>Restart your device completely</li>
-                <li>Update to latest iOS version</li>
-                <li>Reinstall the app (note: this will reset progress)</li>
-            </ol>
-        </div>
-
-        <h4>Battle Mode Not Working</h4>
-        <div class="troubleshooting-step">
-            <strong>Symptoms:</strong> Can't start battles, battles freeze, timer doesn't work<br>
-            <strong>Solutions:</strong>
-            <ol>
-                <li>Close and reopen the app</li>
-                <li>Check available storage space (need at least 100MB free)</li>
-                <li>Update the app to latest version</li>
-                <li>Reset battle mode: Profile → Settings → "Reset Launch Screen"</li>
-            </ol>
-        </div>
-
-        <h4>Progress Not Saving</h4>
-        <div class="troubleshooting-step">
-            <strong>Symptoms:</strong> Achievements reset, scores disappear<br>
-            <strong>Solutions:</strong>
-            <ol>
-                <li>Ensure app has storage permissions</li>
-                <li>Don't force-close app during quiz sessions</li>
-                <li>Allow app to fully close before switching apps</li>
-                <li>Check device storage space</li>
-            </ol>
-        </div>
-
-        <h4>Performance Issues</h4>
-        <div class="troubleshooting-step">
-            <strong>Symptoms:</strong> Slow animations, laggy interface, delayed responses<br>
-            <strong>Solutions:</strong>
-            <ol>
-                <li>Close other running apps</li>
-                <li>Restart device</li>
-                <li>Free up storage space</li>
-                <li>Update iOS to latest version</li>
-                <li>Check device compatibility (iOS 14.0+ required)</li>
-            </ol>
-        </div>
+    <div class="faq-item">
+        <div class="faq-question">Q: Is CodePatterns free?</div>
+        <div class="faq-answer">A: CodePatterns offers both free and premium tiers. The free version includes core features like Battle Mode, Practice, Retry system, and Analytics. CodePatterns Premium is an auto-renewable monthly subscription ($4.99/month with 7-day free trial) that removes ads, provides unlimited explanations and battles, plus access to 200+ additional coding challenges.</div>
     </div>
 
-    <div class="category-section">
-        <h2>📱 System Requirements</h2>
+    <h3>CodePatterns Premium Subscription</h3>
 
-        <table class="requirements-table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Minimum Requirements</th>
-                    <th>Recommended Requirements</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Device</strong></td>
-                    <td>iPhone 6s or newer, iPad (6th gen) or newer</td>
-                    <td>iPhone 8 or newer, iPad Pro or iPad Air</td>
-                </tr>
-                <tr>
-                    <td><strong>iOS</strong></td>
-                    <td>iOS 14.0 or later</td>
-                    <td>iOS 15.0 or later</td>
-                </tr>
-                <tr>
-                    <td><strong>Storage</strong></td>
-                    <td>50MB free space</td>
-                    <td>100MB free space</td>
-                </tr>
-                <tr>
-                    <td><strong>RAM</strong></td>
-                    <td>2GB (recommended 3GB+)</td>
-                    <td>3GB or more</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="highlight-box">
-            <h4>Compatibility Notes:</h4>
+    <div class="subscription-highlight">
+        <div class="faq-question">CodePatterns Premium Details:</div>
+        <div class="faq-answer">
             <ul>
-                <li>Optimized for all iPhone and iPad screen sizes</li>
-                <li>Supports Dark Mode (follows system setting)</li>
-                <li>VoiceOver accessibility support</li>
-                <li>Landscape and portrait orientations</li>
+                <li><strong>Price:</strong> $4.99 per month</li>
+                <li><strong>Free Trial:</strong> 7 days free</li>
+                <li><strong>Length:</strong> Auto-renewable monthly subscription (30 days)</li>
+                <li><strong>Content:</strong> Ad-free experience, unlimited explanations, unlimited battles, advanced analytics, premium question bank</li>
             </ul>
         </div>
     </div>
 
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I manage my CodePatterns Premium subscription?</div>
+        <div class="faq-answer">
+            To manage your subscription:
+            <ol>
+                <li>Go to Settings on your iOS device</li>
+                <li>Tap your name at the top</li>
+                <li>Tap "Subscriptions"</li>
+                <li>Select "CodePatterns Premium"</li>
+                <li>You can cancel, modify, or view details here</li>
+            </ol>
+            You can also manage subscriptions directly through the App Store app.
+        </div>
+    </div>
 
-    <div class="category-section">
-        <h2>🔄 Version History</h2>
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I cancel my subscription?</div>
+        <div class="faq-answer">
+            To cancel your CodePatterns Premium subscription:
+            <ol>
+                <li>Open Settings on your iPhone or iPad</li>
+                <li>Tap your name, then tap Subscriptions</li>
+                <li>Tap CodePatterns Premium</li>
+                <li>Tap "Cancel Subscription"</li>
+            </ol>
+            Your subscription will remain active until the end of the current billing period.
+        </div>
+    </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Current Version: 1.0.0</div>
-            <div class="faq-answer">
-                <strong>Features:</strong>
-                <ul>
-                    <li>Complete algorithm learning system</li>
-                    <li>Real-time Battle Mode</li>
-                    <li>Smart Retry system</li>
-                    <li>Comprehensive analytics</li>
-                    <li>Achievement system</li>
-                </ul>
-                <strong>Known Issues:</strong> None currently reported
-            </div>
+    <div class="faq-item">
+        <div class="faq-question">Q: I'm having trouble with my 7-day free trial. What should I do?</div>
+        <div class="faq-answer">
+            If you're experiencing issues with the free trial:
+            <ol>
+                <li>Ensure you're signed into the same Apple ID that started the trial</li>
+                <li>Check your internet connection during purchase</li>
+                <li>Restart the app and try again</li>
+                <li>Verify that the Paid Apps Agreement is accepted in your Apple ID account</li>
+                <li>If the problem persists, contact support at <a href="mailto:codepatternsapp@gmail.com" style="color: #6B46C1;">codepatternsapp@gmail.com</a></li>
+            </ol>
+            Include your device model, iOS version, and a description of the issue.
+        </div>
+    </div>
+
+    <h3>Using the App</h3>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: What's the difference between Practice and Battle modes?</div>
+        <div class="faq-answer">
+            <strong>Practice Mode:</strong> Learn at your own pace with detailed explanations after each question<br>
+            <strong>Battle Mode:</strong> Real-time 30-second challenges against AI opponents for competitive practice
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: What algorithm categories are covered?</div>
+        <div class="faq-answer">
+            CodePatterns covers 8+ essential categories:
+            <ul>
+                <li>Arrays & Hashing</li>
+                <li>Two Pointers</li>
+                <li>Sliding Window</li>
+                <li>Stacks & Queues</li>
+                <li>Binary Search</li>
+                <li>Linked Lists</li>
+                <li>Trees</li>
+                <li>Dynamic Programming</li>
+                <li>And more!</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>📞 Contact Support</h2>
+
+    <div class="support-channels">
+        <div class="support-channel">
+            <h4>📧 Email Support</h4>
+            <p><strong><a href="mailto:codepatternsapp@gmail.com" style="color: #6B46C1;">codepatternsapp@gmail.com</a></strong></p>
+            <p>Response time: 24-48 hours</p>
+            <p>Include: Device model, iOS version, app version, description of issue</p>
         </div>
 
+        <div class="support-channel">
+            <h4>🌐 Website</h4>
+            <p><strong><a href="https://kevli1004.github.io/CodePatterns/" style="color: #6B46C1;">https://kevli1004.github.io/CodePatterns/</a></strong></p>
+            <p>App information and updates</p>
+            <p>Privacy Policy and Terms of Service</p>
+            <p>Latest app documentation</p>
+        </div>
+
+        <div class="support-channel">
+            <h4>🔗 Quick Links</h4>
+            <p><a href="https://kevli1004.github.io/CodePatterns/privacy_policy.html" style="color: #6B46C1;">Privacy Policy</a></p>
+            <p><a href="https://kevli1004.github.io/CodePatterns/terms_of_service.html" style="color: #6B46C1;">Terms of Service</a></p>
+            <p><a href="mailto:codepatternsapp@gmail.com" style="color: #6B46C1;">Contact Support</a></p>
+        </div>
     </div>
+
+    <div class="contact-section">
+        <h3>What to Include in Support Requests</h3>
+        <p>To help us assist you quickly, please include:</p>
+
+        <h4>1. Device Information:</h4>
+        <ul>
+            <li>Device model (iPhone 12, iPad Pro, etc.)</li>
+            <li>iOS version</li>
+            <li>Available storage space</li>
+        </ul>
+
+        <h4>2. App Information:</h4>
+        <ul>
+            <li>App version (found in Settings)</li>
+            <li>When the issue started</li>
+            <li>Steps to reproduce the problem</li>
+        </ul>
+
+        <h4>3. Subscription Issues:</h4>
+        <ul>
+            <li>Apple ID used for purchase</li>
+            <li>Purchase confirmation email</li>
+            <li>Screenshots of error messages</li>
+        </ul>
+    </div>
+
+    <h2>🔧 Troubleshooting</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">App Won't Launch</div>
+        <div class="faq-answer">
+            <strong>Solutions:</strong>
+            <ol>
+                <li>Force-close the app and restart</li>
+                <li>Restart your device completely</li>
+                <li>Update to latest iOS version</li>
+                <li>Reinstall the app if necessary</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">"Product Not Available" Error</div>
+        <div class="faq-answer">
+            <strong>Solutions:</strong>
+            <ol>
+                <li>Check your internet connection</li>
+                <li>Sign out and back into your Apple ID</li>
+                <li>Restart the App Store app</li>
+                <li>Contact support if the issue persists</li>
+            </ol>
+        </div>
+    </div>
+
+    <h2>📋 System Requirements</h2>
+    <ul>
+        <li><strong>Device:</strong> iPhone 6s or newer, iPad (6th gen) or newer</li>
+        <li><strong>iOS:</strong> iOS 14.0 or later</li>
+        <li><strong>Storage:</strong> 50MB free space minimum</li>
+        <li><strong>Internet:</strong> Required for subscription management only</li>
+    </ul>
 
     <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #E5E7EB; font-style: italic; color: #6B7280;">
         <p><strong>We're committed to providing excellent support and continuously improving CodePatterns based on your feedback!</strong></p>
